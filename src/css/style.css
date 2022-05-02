@@ -3,20 +3,94 @@
 /*******************************************/
 
 /* Box Model Hack */
-*{
+* {
   box-sizing: border-box;
 }
 
 /******************************************
-/* LAYOUT
+/* LAYOUT 
 /*******************************************/
-img{
-  display: block;
-  margin: 0 auto;
-  width: 25%;
+
+*:root {
+  --bg-primary: #1e1e1e;
+  --bg-secondary: #f4f4f4;
+
+  --bg-primary-accent-light: hsl(0, 0%, 60%);
+  --bg-primary-accent-mid: hsl(0, 0%, 38%);
+  --bg-primary-accent-dark: hsl(0, 0%, 21%);
+
+  --bg-highlight: #f2ba39;
+
+  --text-primary: #f3f3f3;
+  --text-secondary: #838383;
+  --text-nav: #a3a3a3;
+  --text-secondary-highlight: #9e9e9e;
+
+  --ff-header: 'Lora', serif;
+  --ff-nav: 'Open Sans', sans-serif;
+  --ff-primary: 'Poppins', sans-serif;
 }
 
-
 /******************************************
-/* ADDITIONAL STYLES
+/* header
 /*******************************************/
+
+header {
+  padding: 0 5%;
+  background-color: var(--bg-primary);
+  font-family: var(--ff-nav);
+  font-weight: 400;
+}
+
+header nav {
+  width: 100%;
+}
+
+nav ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--text-nav);
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.logo a {
+  display: block;
+  margin-top: 10px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  background-color: var(--bg-secondary);
+  border-radius: 4px;
+}
+
+.logo + li {
+  margin-left: auto;
+}
+
+.nav-icon:not(.nav-icon + .nav-icon) {
+  margin-left: auto;
+}
+
+.nav-icon a {
+  padding: 7px 15px;
+}
+
+.nav-icon img {
+  display: block;
+  width: 24px;
+}

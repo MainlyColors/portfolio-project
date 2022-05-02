@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>site</title>
+    <!-- Lora, Open sans, Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500&family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./src/css/normalize.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
@@ -16,13 +23,28 @@
     <header>
       <nav>
         <ul>
-          <li><a href="">Logo</a></li>
+          <li class="logo"><a href=""></a></li>
           <li><a href="">Home</a></li>
           <li><a href="">Products</a></li>
           <li><a href="">Discover</a></li>
-          <li><a href="">Search</a></li>
+          <li class="nav-icon search">
+            <a href="">
+              <img
+                src="./assets/svg/magnifying-glass.svg"
+                alt="search"
+                srcset=""
+              />
+            </a>
+          </li>
           <!-- on click form search-->
-          <li><a href="">cart</a></li>
+          <li class="nav-icon cart">
+            <a href="">
+              <img
+                src="./assets/svg/shopping-cart-simple.svg"
+                alt="shopping cart"
+              />
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
