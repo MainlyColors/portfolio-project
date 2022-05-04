@@ -9,9 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500&family=Poppins:wght@300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500&family=Poppins:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Leronda -->
+    <link rel="stylesheet" href="./assets/fonts/Leronda-font-stylesheet.css" />
 
     <link rel="stylesheet" href="./src/css/normalize.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
@@ -49,34 +52,45 @@
       </nav>
     </header>
     <!-- landing page message -->
-    <section>
-      <p>Teapot collection with premium quality</p>
-      <h1>Simple way to choose your teapots</h1>
-      <form>
-        <label for="emailPromo">
-          Enter your email to get
-          <strong>discount 20%</strong>
-        </label>
-        <input type="text" id="emailPromo" />
-      </form>
-      <section>
-        <div>
-          <p>100&plus;</p>
-          <p>
-            unique
-            <br />
-            style
-          </p>
-        </div>
-        <div>
-          <p>98&plus;</p>
-          <p>
-            superb
-            <br />
-            models
-          </p>
-        </div>
-        <!-- maybe add a div here for the line circle thing -->
+    <section class="heroSection">
+      <section class="pitchSection">
+        <p>Teapot collection with premium quality</p>
+        <h1>
+          Simple way to
+          <br />
+          <em>choose</em>
+          your
+          <br />
+          <span class="star"></span>
+          teapots
+        </h1>
+        <form>
+          <label for="emailPromo">
+            Enter your email to get
+            <strong>discount 20%</strong>
+          </label>
+          <input type="text" id="emailPromo" />
+          <button type="submit"></button>
+        </form>
+        <section class="statsSection">
+          <div>
+            <p>100&plus;</p>
+            <p>
+              unique
+              <br />
+              style
+            </p>
+          </div>
+          <div>
+            <p>98&plus;</p>
+            <p>
+              superb
+              <br />
+              models
+            </p>
+          </div>
+          <!-- maybe add a div here for the line circle thing -->
+        </section>
       </section>
     </section>
 
