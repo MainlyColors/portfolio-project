@@ -15,7 +15,9 @@
 /* LAYOUT / resets
 /*******************************************/
 
-*:root {
+*:root,
+*::after,
+*::before {
   --bg-primary: #1e1e1e;
   --bg-secondary: #f4f4f4;
   --bg-secondary-accent: #fff;
@@ -564,4 +566,174 @@ h1 em {
 
 .featureShowcaseIMG .specialEdition {
   transform: scale(1.2);
+}
+
+/******************************************
+/* Our products section
+/*******************************************/
+
+.productSaleSection {
+  padding: 140px 5% 130px 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-secondary);
+}
+
+.productSaleSection h2 {
+  margin: 0;
+  font-size: 48px;
+  color: var(--bg-primary);
+}
+
+.productSaleSection > p {
+  width: 40ch;
+  text-align: center;
+  font-family: var(--ff-primary);
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+/******************************************
+/* Our products section >  catagorySelectorMenuUL
+/*******************************************/
+
+.catagorySelectorMenuUL {
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.catagorySelectorMenuUL li {
+  position: relative;
+  font-family: var(--ff-primary);
+  font-size: 18px;
+  color: var(--text-secondary-highlight);
+  cursor: pointer;
+}
+
+.catagorySelectorMenuUL li:hover {
+  color: var(--bg-primary);
+  font-weight: 500;
+}
+
+/* animate this for later so it slides around */
+.catagorySelectorMenuUL li:hover::before {
+  position: absolute;
+  /* 2 less for border on after */
+  bottom: -13px;
+  left: 0px;
+  content: '';
+  background-color: var(--bg-primary);
+  width: 100%;
+  height: 5px;
+  clip-path: polygon(43% 100%, 50% 0, 58% 100%);
+}
+
+.catagorySelectorMenuUL li:hover::after {
+  position: absolute;
+  bottom: -15px;
+  left: 0px;
+  content: '';
+  background-color: var(--bg-primary);
+  width: 100%;
+  border-bottom: 2px solid var(--bg-primary-accent-light);
+}
+
+/******************************************
+/* Our products section >  productCatalogSection
+/*******************************************/
+
+.productCatalogSection {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 60px;
+  width: 100%;
+}
+
+.productCard {
+  position: relative;
+  font-family: var(--ff-primary);
+  /* background-color: var(--bg-secondary-accent); */
+}
+
+/* should be an img */
+.productCard div {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  background-color: var(--bg-secondary-accent);
+}
+
+.productCard p {
+  margin: 0;
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--text-secondary-highlight);
+}
+
+.productCard h4 {
+  margin: 0;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--bg-primary);
+}
+
+.price {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary-highlight);
+}
+
+/******************************************
+/* Our products section >  sale/new ad
+/*******************************************/
+.sale-ad {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: center;
+  font-family: var(--ff-primary);
+  font-size: 12px;
+  line-height: 60px;
+  font-weight: 600;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--bg-highlight);
+  color: var(--bg-primary);
+  z-index: 50;
+}
+
+/******************************************
+/* Our products section >  button
+/*******************************************/
+
+.btn {
+  margin-top: 60px;
+  padding: 0;
+  padding: 15px 40px;
+  font-family: var(--ff-primary);
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 30px;
+  border: 2px solid var(--text-secondary-highlight);
+  color: var(--bg-primary);
+  cursor: pointer;
 }
