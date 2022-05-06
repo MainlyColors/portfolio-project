@@ -558,8 +558,8 @@ h1 em {
 
 .featureShowcaseIMG div {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 20px;
+  left: 20px;
 }
 
 .featureShowcaseIMG .specialEdition {
