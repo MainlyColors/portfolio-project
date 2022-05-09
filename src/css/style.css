@@ -820,3 +820,164 @@ h1 em {
 .productDisplay .specialEdition {
   transform: scale(0.8);
 }
+
+/******************************************
+/* footer decoration (above footer)
+/*******************************************/
+
+.half-circle {
+  width: 100%;
+  height: 120px;
+  background-color: var(--bg-secondary);
+}
+
+.half-circle svg {
+  width: 100%;
+  height: 100%;
+}
+
+.half-circle circle {
+  stroke: var(--text-secondary-highlight);
+}
+
+/******************************************
+/* footer
+/*******************************************/
+
+footer {
+  padding: 45px 5% 90px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-secondary);
+}
+
+/******************************************
+/* footer > contactSection
+/*******************************************/
+
+.contactSection {
+  width: 30%;
+}
+
+.contactSection h2 {
+  margin: 0;
+  font-size: 48px;
+  line-height: 1.25;
+  color: var(--bg-primary);
+}
+
+.contactSection p {
+  margin: 0;
+  margin-top: 40px;
+  font-family: var(--ff-primary);
+  font-size: 18px;
+  color: var(--text-secondary-highlight);
+}
+
+.contactSection p a {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  font-family: var(--ff-primary);
+  font-size: 19px;
+  color: var(--text-secondary-highlight);
+}
+
+.star-inverse {
+  position: relative;
+  top: 10px;
+  display: inline-block;
+  background-color: var(--bg-primary);
+  /* star might be rounded */
+  background-image: url('../../assets/svg/Star-inverse.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 30px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+/******************************************
+/* footer > contactSection
+/*******************************************/
+.linksSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 55%;
+}
+
+.linksContainer {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.linksContainer li:first-of-type {
+  /* 20px added to a 20px gap = 40px */
+  margin-bottom: 20px;
+}
+
+.linksContainer li:first-of-type a {
+  font-weight: 600;
+  color: var(--bg-primary);
+}
+
+.linksContainer a {
+  text-decoration: none;
+  font-family: var(--ff-primary);
+  font-size: 18px;
+  color: var(--text-secondary-highlight);
+}
+
+.linksContainer.socials {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 15px;
+}
+
+.socials li:first-of-type {
+  flex-basis: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.facebook {
+  background-image: url('../../assets/svg/facebook-logo.svg');
+}
+.instagram {
+  background-image: url('../../assets/svg/instagram-logo.svg');
+}
+.twitter {
+  background-image: url('../../assets/svg/twitter-logo.svg');
+}
+/******************************************
+/* footer > small
+/*******************************************/
+
+.copywrite {
+  display: block;
+  padding: 18px 0;
+  width: 100%;
+  text-align: center;
+  font-family: var(--ff-primary);
+  font-size: 16px;
+  font-weight: 300;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}

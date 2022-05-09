@@ -1,0 +1,20 @@
+<svg>
+        <circle
+        id='circle-1'
+          cx="400"
+          cy="4010"
+          r="4000"
+          fill="none"
+          stroke="#000"
+          stroke-width="2"
+        ></circle>
+        <circle
+        id='circle-2'
+          cx="550"
+          cy="4010"
+          r="4000"
+          fill="none"
+          stroke="#000"
+          stroke-width="2"
+        ></circle>
+      </svg>
