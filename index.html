@@ -64,7 +64,7 @@
           <span class="star"></span>
           teapots
         </h1>
-        <form>
+        <form class="emailPromo">
           <label for="emailPromo">
             Enter your email to get
             <strong>discount 20%</strong>
@@ -308,6 +308,52 @@
         </article>
       </section>
       <button class="btn">View All</button>
+    </section>
+
+    <!-- section - coupon  -->
+    <section class="couponSectionContainer">
+      <section class="coupon">
+        <section class="couponPitchContainer">
+          <h2>Save 20&percnt; for today!</h2>
+          <p>
+            The Bruka Collection carries an appealing elongated oval optical
+            shape
+          </p>
+          <form class="emailPromo">
+            <label for="emailPromo">
+              Enter your email to get
+              <strong>discount 20%</strong>
+            </label>
+            <input type="text" id="emailPromo" />
+            <button type="submit"></button>
+          </form>
+        </section>
+        <div class="productDisplay">
+          <div class="specialEdition">
+            <svg>
+              <path
+                d="M 20 50 a 30 30 0 0 1 60 0 a 30 30 0 0 1 -60 0"
+                fill="none"
+                stroke="none"
+                id="textCirCurve"
+              />
+              <!-- circumference = 188.49556 -->
+              <path
+                d="M 55 84 A 35 35 104 0 1 15 46.5"
+                fill="none"
+                stroke="#000"
+                stroke-width="0.8"
+                id="curveConnectingText"
+              />
+              <text textLength="130">
+                <textPath startOffset="5" xlink:href="#textCirCurve">
+                  Special Edition
+                </textPath>
+              </text>
+            </svg>
+          </div>
+        </div>
+      </section>
     </section>
   </body>
 </html>
