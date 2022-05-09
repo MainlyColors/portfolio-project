@@ -456,7 +456,7 @@ h1 em {
   height: var(--dia);
   border-radius: 50%;
   background-color: var(--bg-secondary-accent);
-  background-image: url('../../assets/svg/arrow-right.svg');
+  background-image: url('../../assets/svg/arrow-right-dark.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 25px 25px;
@@ -752,7 +752,7 @@ h1 em {
 /*******************************************/
 /* FIX: with image, the padding needs to change */
 .coupon {
-  padding: 145px 90px 60px 90px;
+  padding: 50px 90px 60px 90px;
   display: flex;
   justify-content: space-between;
   background-color: var(--bg-secondary-accent);
@@ -760,13 +760,14 @@ h1 em {
 }
 
 .couponPitchContainer {
+  padding-top: 85px;
   position: relative;
 }
 
 .couponPitchContainer::before {
   position: absolute;
   content: '';
-  top: -70px;
+  top: 15px;
   left: 0;
   width: 170px;
   height: 57px;
@@ -814,10 +815,19 @@ h1 em {
 /*******************************************/
 
 .productDisplay {
-  width: 20%;
+  position: relative;
+  width: 38%;
+  background-image: url('https://m.media-amazon.com/images/I/715DQkdCvnL._AC_SX679_.jpg'),
+    url('../../assets/svg/line-vector-field.svg');
+  background-repeat: no-repeat;
+  background-position: left 80px top 0, right;
+  background-size: 60%, contain;
 }
 
 .productDisplay .specialEdition {
+  position: absolute;
+  bottom: 40px;
+  right: 25px;
   transform: scale(0.8);
 }
 
