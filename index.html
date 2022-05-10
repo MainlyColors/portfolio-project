@@ -51,112 +51,93 @@
       </nav>
     </header>
     <!-- landing page message -->
-    <section class="heroSection">
-      <section class="pitchSection">
-        <p>Teapot collection with premium quality</p>
-        <h1>
-          Simple way to
-          <br />
-          <em>choose</em>
-          your
-          <br />
-          <span class="star"></span>
-          teapots
-        </h1>
-        <form class="emailPromo">
-          <label for="emailPromo">
-            Enter your email to get
-            <strong>discount 20%</strong>
-          </label>
-          <input type="text" id="emailPromo" />
-          <button type="submit"></button>
-        </form>
-        <section class="statsSection">
-          <div>
-            <p>100&plus;</p>
-            <p>
-              unique
-              <br />
-              style
-            </p>
-          </div>
-          <div>
-            <p>98&plus;</p>
-            <p>
-              superb
-              <br />
-              models
-            </p>
-          </div>
-          <!-- maybe add a div here for the line circle thing -->
+    <div class="max-container">
+      <section class="heroSection max-child">
+        <section class="pitchSection">
+          <p>Teapot collection with premium quality</p>
+          <h1>
+            Simple way to
+            <br />
+            <em>choose</em>
+            your
+            <br />
+            <span class="star"></span>
+            teapots
+          </h1>
+          <form class="emailPromo--form">
+            <label for="emailPromo">
+              Enter your email to get
+              <strong>discount 20%</strong>
+            </label>
+            <input type="text" id="emailPromo" />
+            <button type="submit"></button>
+          </form>
+          <section class="statsSection">
+            <div>
+              <p>100&plus;</p>
+              <p>
+                unique
+                <br />
+                style
+              </p>
+            </div>
+            <div>
+              <p>98&plus;</p>
+              <p>
+                superb
+                <br />
+                models
+              </p>
+            </div>
+          </section>
         </section>
-      </section>
-      <section class="productShowCaseSection">
-        <article class="showcase-1">
-          <!-- <a href=""><p>Frangipani</p></a> -->
-          <!-- <svg viewBox="-10 -10 150 150">
-            <path
-              id="curve"
-              d="m 25 50 c 1 -2.2875 16.375 -36.3 44.65 -35.85 c 27.825 0.45 42.7 33.8625 43.775 36.375"
-              fill="none"
-            />
-            <text width="150">
-              <textPath startOffset="10%" xlink:href="#curve">
-                Frangipani
-              </textPath>
-            </text>
-          </svg> -->
-          <svg viewBox="-20 -30 160 80">
-            <path
-              id="curve"
-              clip-rule="evenodd"
-              d="M 0 80 C 0 35.8172 26.8629 0 60 0 C 93.1373 0 120 35.8172 120 80 H 0 Z"
-              fill="none"
-            />
 
-            <!-- forawrds -->
-            <!-- d="M0 80C0 35.8172 35.8172 0 80 0C124.183 0 160 35.8172 160 80H0Z" -->
-            <!-- backwards -->
-            <!-- d="M160 80C160 35.8172 124.183 0 80 0C35.8173 0 0 35.8172 0 80H160Z" -->
-            <text width="100">
-              <textPath startOffset="19%" xlink:href="#curve">
-                Frangipani
-              </textPath>
-            </text>
-          </svg>
-
-          <!-- <svg width="180" height="81" viewBox="0 0 180 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.444336 81C4.95984 35.5201 43.3318 0 90 0C136.668 0 175.04 35.5201 179.556 81H0.444336Z" fill="#999999"/>
-            </svg> -->
-          <!-- special edition -->
-          <div class="specialEdition">
-            <svg>
+        <!-- product showcase on landing page -->
+        <section class="productShowCaseSection">
+          <article class="showcase-1">
+            <svg viewBox="-20 -30 160 80">
               <path
-                d="M 20 50 a 30 30 0 0 1 60 0 a 30 30 0 0 1 -60 0"
+                id="curve"
+                clip-rule="evenodd"
+                d="M 0 80 C 0 35.8172 26.8629 0 60 0 C 93.1373 0 120 35.8172 120 80 H 0 Z"
                 fill="none"
-                stroke="none"
-                id="textCirCurve"
               />
-              <!-- circumference = 188.49556 -->
-              <path
-                d="M 55 84 A 35 35 104 0 1 15 46.5"
-                fill="none"
-                stroke="#000"
-                stroke-width="0.8"
-                id="curveConnectingText"
-              />
-              <text textLength="130">
-                <textPath startOffset="5" xlink:href="#textCirCurve">
-                  Special Edition
+              <text width="100">
+                <textPath startOffset="19%" xlink:href="#curve">
+                  Frangipani
                 </textPath>
               </text>
             </svg>
-          </div>
-        </article>
-        <article class="showcase-2"><a href=""></a></article>
-        <article class="showcase-3"><a href=""></a></article>
+            <!-- special edition -->
+            <div class="specialEdition">
+              <svg>
+                <path
+                  d="M 20 50 a 30 30 0 0 1 60 0 a 30 30 0 0 1 -60 0"
+                  fill="none"
+                  stroke="none"
+                  id="textCirCurve"
+                />
+                <!-- circumference = 188.49556 -->
+                <path
+                  d="M 55 84 A 35 35 104 0 1 15 46.5"
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="0.8"
+                  id="curveConnectingText"
+                />
+                <text textLength="130">
+                  <textPath startOffset="5" xlink:href="#textCirCurve">
+                    Special Edition
+                  </textPath>
+                </text>
+              </svg>
+            </div>
+          </article>
+          <article class="showcase-2"><a href=""></a></article>
+          <article class="showcase-3"><a href=""></a></article>
+        </section>
       </section>
-    </section>
+    </div>
 
     <!-- section - Our Categories -->
     <section class="categoriesSection">
@@ -318,7 +299,7 @@
             The Bruka Collection carries an appealing elongated oval optical
             shape
           </p>
-          <form class="emailPromo">
+          <form class="emailPromo--form">
             <label for="emailPromo">
               Enter your email to get
               <strong>discount 20%</strong>

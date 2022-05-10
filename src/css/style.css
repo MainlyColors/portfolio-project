@@ -15,6 +15,12 @@
 /* LAYOUT / resets
 /*******************************************/
 
+/* 
+max-width desktop screen: 1500px;
+
+
+*/
+
 *:root,
 *::after,
 *::before {
@@ -36,6 +42,9 @@
   --ff-header: 'Frank Ruhl Libre', serif;
   --ff-nav: 'Open Sans', sans-serif;
   --ff-primary: 'Poppins', sans-serif;
+
+  /* viewports */
+  --max-width-desktop: 1250px;
 }
 
 button {
@@ -44,11 +53,21 @@ button {
   color: unset;
 }
 
-h2 {
-  /* font-family: 'Vidaloka', serif; */
-  font-family: 'Frank Ruhl Libre', serif;
+/******************************************
+/* utility classes
+/*******************************************/
 
-  /* font-weight: 400; */
+.max-container {
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--bg-primary);
+}
+
+.max-child {
+  flex-basis: 100%;
 }
 
 /******************************************
@@ -56,7 +75,10 @@ h2 {
 /*******************************************/
 
 header {
+  /* padding only applies under max-width because justify-content center*/
   padding: 0 5%;
+  display: flex;
+  justify-content: center;
   background-color: var(--bg-primary);
   font-family: var(--ff-nav);
   font-weight: 400;
@@ -64,13 +86,14 @@ header {
 
 header nav {
   width: 100%;
+  max-width: var(--max-width-desktop);
 }
 
 nav ul {
-  width: 100%;
   margin: 0;
   padding: 0;
-  padding-top: 30px;
+  padding-top: 40px;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -80,22 +103,22 @@ nav li {
 }
 
 nav a {
+  padding: 10px 30px;
   display: block;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: var(--text-nav);
   font-size: 1rem;
   text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-nav);
 }
 
 .logo a {
-  display: block;
-  margin-top: 10px;
   padding: 0;
-  width: 30px;
-  height: 30px;
-  background-color: var(--bg-secondary);
+  margin-top: 5px;
+  display: block;
+  width: 35px;
+  height: 35px;
   border-radius: 4px;
+  background-color: var(--bg-secondary);
 }
 
 .logo + li {
@@ -120,9 +143,10 @@ nav a {
 /*******************************************/
 
 .heroSection {
+  padding: 150px 0 100px 0;
   display: flex;
-  padding: 100px 5% 100px 5%;
-  background-color: var(--bg-primary);
+  justify-content: space-between;
+  max-width: var(--max-width-desktop);
   color: var(--text-primary);
 }
 
@@ -132,6 +156,7 @@ nav a {
 
 .pitchSection {
   width: 50%;
+  max-width: 535px;
 }
 
 .pitchSection p {
@@ -142,13 +167,12 @@ nav a {
   font-family: var(--ff-primary);
 }
 
-/* FIX THE FONT, FIND THE RIGHT ONE */
 .pitchSection h1 {
   font-family: var(--ff-header);
   margin: 0;
-  margin-top: 20px;
+  margin-top: 40px;
   font-size: 80px;
-  line-height: 88px;
+  line-height: 1.3;
 }
 
 h1 em {
@@ -157,6 +181,8 @@ h1 em {
 }
 
 .star {
+  position: relative;
+  top: 5px;
   display: inline-block;
   background-color: var(--bg-highlight);
   /* star might be rounded */
@@ -169,20 +195,20 @@ h1 em {
   border-radius: 50%;
 }
 
-.emailPromo {
-  margin-top: 60px;
+.emailPromo--form {
+  margin-top: 80px;
   display: grid;
   grid-template-columns: 85% 15%;
   grid-template-rows: 100%;
   /* justify-items: center; */
   align-items: center;
   height: 80px;
-  width: 90%;
+  width: 100%;
   /* position: relative; */
   /* background-color: rgba(255, 255, 0, 0.3); */
 }
 
-.emailPromo label {
+.emailPromo--form label {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   color: var(--text-secondary-highlight);
@@ -191,7 +217,7 @@ h1 em {
 }
 
 /* outline on focus needs to be fixed */
-.emailPromo input {
+.emailPromo--form input {
   background-color: unset;
   grid-column: 1 / 3;
   grid-row: 1 / 2;
@@ -205,7 +231,7 @@ h1 em {
   border-radius: 40px;
 }
 
-.emailPromo button {
+.emailPromo--form button {
   margin-right: 10px;
   width: 60px;
   height: 60px;
@@ -256,23 +282,27 @@ h1 em {
 /******************************************
 /* hero/landing page > .productShowCaseSection
 /*******************************************/
-
+/* max = 1242 */
 .productShowCaseSection {
   position: relative;
   /* padding-left: 5%; */
-  width: 50%;
+  width: 42%;
+  max-height: 478px;
+  max-width: 523px;
   display: grid;
-  grid-template-columns: 45% 0.75fr;
-  grid-template-rows: 40% 40%;
+  grid-template-columns: 57% 38%;
+  grid-template-rows: 50% 50%;
+  /* grid-template-rows: 40% 40%; */
   justify-items: center;
-  row-gap: 20px;
-  column-gap: 30px;
+  /* row-gap: 20px; */
+  /* column-gap: 30px; */
+  gap: 20px;
 }
 
 .productShowCaseSection::before {
   position: absolute;
   content: '';
-  bottom: 0;
+  bottom: -160px;
   right: 0;
   background-image: url('../../assets/svg/line-3Circle.svg');
   background-repeat: no-repeat;
@@ -288,7 +318,8 @@ h1 em {
   /* height: 80%; */
   width: 100%;
   background-color: var(--bg-primary-accent-mid);
-  border-radius: 130px;
+  /* border-radius: 150px; */
+  border-radius: 999px;
   grid-column: 1 / 2;
   grid-row: 1 / 3;
 }
@@ -343,6 +374,7 @@ h1 em {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 25px 25px;
+  transform: scale(1.15);
 }
 
 .specialEdition svg {
@@ -385,11 +417,20 @@ h1 em {
 .showcase-3 {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-  background-color: var(--bg-primary-accent-light);
   width: 100%;
   height: 100%;
-  border-radius: 150px;
+  /* padding-top: 100%; */
   /* justify-self: left; */
+}
+
+.showcase-3 a {
+  display: block;
+  background-color: var(--bg-primary-accent-light);
+  width: 100%;
+  height: auto;
+  /* reason for padding: https://css-tricks.com/forums/topic/css-responsive-circles/ */
+  padding-top: 100%;
+  border-radius: 50%;
 }
 
 /******************************************
@@ -799,16 +840,16 @@ h1 em {
   color: var(--text-secondary-highlight);
 }
 
-.coupon .emailPromo {
+.coupon .emailPromo--form {
   margin-top: 40px;
   height: 60px;
 }
 
-.coupon .emailPromo input {
+.coupon .emailPromo--form input {
   border-color: var(--text-secondary);
 }
 
-.coupon .emailPromo button {
+.coupon .emailPromo--form button {
   margin-right: 6px;
   width: 48px;
   height: 48px;
