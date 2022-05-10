@@ -33,7 +33,7 @@
   --text-nav: #a3a3a3;
   --text-secondary-highlight: #9e9e9e;
 
-  --ff-header: 'Lora', serif;
+  --ff-header: 'Frank Ruhl Libre', serif;
   --ff-nav: 'Open Sans', sans-serif;
   --ff-primary: 'Poppins', sans-serif;
 }
@@ -42,6 +42,13 @@ button {
   border: unset;
   background-color: unset;
   color: unset;
+}
+
+h2 {
+  /* font-family: 'Vidaloka', serif; */
+  font-family: 'Frank Ruhl Libre', serif;
+
+  /* font-weight: 400; */
 }
 
 /******************************************
@@ -137,11 +144,7 @@ nav a {
 
 /* FIX THE FONT, FIND THE RIGHT ONE */
 .pitchSection h1 {
-  /* font-family: 'Leronda';
-  font-weight: 400; */
-  /* font-family: var(--ff-header);
-  font-weight: 600; */
-  font-family: unset;
+  font-family: var(--ff-header);
   margin: 0;
   margin-top: 20px;
   font-size: 80px;
@@ -150,7 +153,7 @@ nav a {
 
 h1 em {
   font-style: normal;
-  font-weight: lighter;
+  font-weight: 400;
 }
 
 .star {
@@ -409,6 +412,7 @@ h1 em {
   margin: 0;
   font-size: 48px;
   color: var(--bg-primary);
+  font-family: var(--ff-header);
 }
 
 .line {
@@ -486,6 +490,7 @@ h1 em {
 
 .newFeaturesSection h2 {
   margin: 0;
+  font-family: var(--ff-header);
   font-size: 48px;
   color: var(--bg-primary);
 }
@@ -582,6 +587,7 @@ h1 em {
 
 .productSaleSection h2 {
   margin: 0;
+  font-family: var(--ff-header);
   font-size: 48px;
   color: var(--bg-primary);
 }
@@ -780,6 +786,7 @@ h1 em {
 
 .coupon h2 {
   margin: 0;
+  font-family: var(--ff-header);
   font-size: 48px;
   color: var(--bg-primary);
 }
@@ -872,6 +879,7 @@ footer {
 
 .contactSection h2 {
   margin: 0;
+  font-family: var(--ff-header);
   font-size: 48px;
   line-height: 1.25;
   color: var(--bg-primary);
