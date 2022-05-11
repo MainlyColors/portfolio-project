@@ -885,6 +885,7 @@ h1 em {
 
 .half-circle {
   width: 100%;
+  max-width: var(--max-width-desktop);
   height: 120px;
   background-color: var(--bg-secondary);
 }
