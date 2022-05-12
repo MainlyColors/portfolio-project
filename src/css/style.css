@@ -63,11 +63,20 @@ button {
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: var(--bg-primary);
 }
 
 .max-child {
   flex-basis: 100%;
+}
+
+.bg-primary {
+  background-color: var(--bg-primary);
+}
+.bg-secondary {
+  background-color: var(--bg-secondary);
+}
+.bg-secondary-accent {
+  background-color: var(--bg-secondary-accent);
 }
 
 /******************************************
@@ -439,7 +448,8 @@ h1 em {
 
 .categoriesSection {
   /* left/right padding 130px by ruler but too big for 1200px screen */
-  padding: 150px 5% 130px 5%;
+  padding: 150px 0 130px 0;
+  max-width: var(--max-width-desktop);
   background-color: var(--bg-secondary);
 }
 
@@ -515,9 +525,10 @@ h1 em {
 
 .newFeaturesSectionContainer {
   padding-top: 140px;
-  padding: 140px 5% 150px 5%;
+  padding: 140px 0 150px 0;
   display: flex;
   gap: 150px;
+  max-width: var(--max-width-desktop);
   background-color: var(--bg-secondary-accent);
 }
 
@@ -619,10 +630,11 @@ h1 em {
 /*******************************************/
 
 .productSaleSection {
-  padding: 140px 5% 0 5%;
+  padding: 140px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: var(--max-width-desktop);
   background-color: var(--bg-secondary);
 }
 
@@ -790,7 +802,8 @@ h1 em {
 /*******************************************/
 
 .couponSectionContainer {
-  padding: 140px 5% 130px 5%;
+  padding: 140px 0 130px 0;
+  max-width: var(--max-width-desktop);
   background-color: var(--bg-secondary);
 }
 
@@ -904,10 +917,11 @@ h1 em {
 /*******************************************/
 
 footer {
-  padding: 45px 5% 90px 5%;
+  padding: 45px 0 90px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: var(--max-width-desktop);
   background-color: var(--bg-secondary);
 }
 
